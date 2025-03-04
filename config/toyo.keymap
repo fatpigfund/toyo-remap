@@ -19,6 +19,13 @@
             bindings = <&kp LEFT_ALT &kp E &kp S &kp V &kp RET>;
             label = "M0";
         };
+
+        esu: esu {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp E &kp S &kp U &kp RET>;
+            label = "ESU";
+        };
     };
 
     keymap {
