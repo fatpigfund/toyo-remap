@@ -68,6 +68,13 @@
             bindings = <&kp LEFT_ALT &kp A &kp J>;
             label = "AJ";
         };
+
+        hsc: hsc {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LEFT_ALT &kp H &kp S &kp C>;
+            label = "HSC";
+        };
     };
 
     keymap {
@@ -97,7 +104,7 @@
             // ----------------------------------------------------------------------------------------------------------------
 
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &est  &trans  &esu  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &esf  &agg  &ah  &aj  &auu  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &esv  &trans  &trans  &trans  &trans  &trans  &trans  &tog 2  &kp C_VOLUME_UP  &trans  &trans  &trans  &trans  &kp C_PLAY_PAUSE  &trans  &kp K_CONTEXT_MENU  &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_NEXT
+&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &est  &trans  &esu  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &esf  &agg  &ah  &aj  &auu  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &hsc  &esv  &trans  &trans  &trans  &trans  &trans  &trans  &mo 2  &kp C_VOLUME_UP  &trans  &trans  &trans  &trans  &kp C_PLAY_PAUSE  &trans  &kp K_CONTEXT_MENU  &kp C_PREV  &kp C_VOLUME_DOWN  &kp C_NEXT
             >;
         };
 
