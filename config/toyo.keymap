@@ -93,7 +93,7 @@
         ma: ma {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp LALT &kp M &kp A>;
+            bindings = <&kp LALT &kp M &kp A &kp A>;
             label = "MA";
         };
     };
